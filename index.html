@@ -12,13 +12,19 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/0da816c305.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
   </head>
   <body>
     <section class="header">
       <!-- Nav -->
       <nav>
         <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
-        <div class="nav-links">
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
           <ul>
             <li><a href="">Home</a></li>
             <li><a href="">About</a></li>
@@ -27,8 +33,36 @@
             <li><a href="">Contact</a></li>
           </ul>
         </div>
+        <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
       </nav>
       <!-- End Nav -->
+
+      <!-- HERO text div-->
+      <div class="text-box">
+        <h1>World's Biggest University</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+          mollitia ab <br />voluptatum tenetur debitis praesentium ex ipsam!
+        </p>
+        <a href="" class="hero-btn">Visit Us to know more</a>
+      </div>
+      <!-- End Hero -->
     </section>
+    <!-- End Header -->
+
+    <!-- Course -->
+
+    <!-- ------Javascript for Toggle Menu------ -->
+    <script>
+      const navLinks = document.querySelector('#navLinks');
+
+      function showMenu() {
+        navLinks.style.right = '0';
+      }
+
+      function hideMenu() {
+        navLinks.style.right = '-200px';
+      }
+    </script>
   </body>
 </html>
