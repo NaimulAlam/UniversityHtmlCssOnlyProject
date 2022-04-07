@@ -37,23 +37,66 @@
       </nav>
       <!-- End Nav -->
 
-      <h1>About Us</h1>
+      <h1>Thank You For Your Message!</h1>
     </section>
 
-    <!-- ---- About Us Section ---- -->
-    <section class="about-us">
+    <!-- ---- Contact Us ---- -->
+    <div class="query-again">
+      <h2>
+        Any Other Inquery? <br />
+        Write Again
+      </h2>
+    </div>
+    <section class="contact-us">
       <div class="row">
-        <div class="about-us-col">
-          <h1>We are the World's Largest University</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quasi
-            accusamus quia. Totam, officia ipsa! Explicabo laboriosam natus ipsa
-            dolore, modi, ipsum eum, adipisci maiores neque iste iusto nam et.
-          </p>
-          <a href="course.html" class="hero-btn btn-border">EXPLORE NOW</a>
+        <div class="contact-us-col">
+          <div>
+            <i class="fa fa-thin fa-house"></i>
+            <span>
+              <h5>ZBC Road, XYZ/A1 Bulding</h5>
+              <p>Bydgoszcz, Poland</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-thin fa-phone"></i>
+            <span>
+              <h5>+48 01231231231</h5>
+              <p>Bydgoszcz, Poland</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-thin fa-envelope"></i>
+            <span>
+              <h5>test@gmail.com</h5>
+              <p>Email your query</p>
+            </span>
+          </div>
         </div>
-        <div class="about-us-col">
-          <img src="images/about.jpg" alt="about-us" />
+        <div class="contact-us-col">
+          <form action="form-handler.php" method="post">
+            <input
+              name="name"
+              type="text"
+              placeholder="Enter your name"
+              required
+            />
+            <input
+              name="email"
+              type="email"
+              placeholder="Enter email address"
+              required
+            />
+            <input
+              name="subject"
+              type="text"
+              placeholder="Enter your subject"
+              required
+            />
+            <textarea name="message" rows="8" placeholder="Message"></textarea>
+            <button type="submit" class="hero-btn btn-border">
+              Send Message
+            </button>
+          </form>
         </div>
       </div>
     </section>
