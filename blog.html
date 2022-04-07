@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML And CSS Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0da816c305.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body>
+    <section class="sub-header">
+      <!-- Nav -->
+      <nav>
+        <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Course</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <!-- End Nav -->
+
+      <h1>Our Certificate & Online Programme For 2022-2023</h1>
+    </section>
+
+    <!-- ---- Blog page ---- -->
+    <section class="blog-content">
+      <div class="row">
+        <div class="blog-left">
+          <img src="images/certificate.jpg" alt="" />
+          <h2>Our Certificate & Online Programme For 2022-2023</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+            quibusdam excepturi inventore porro nostrum corporis numquam ducimus
+            aliquam dignissimos molestias, facere atque deserunt totam in hic
+            id. In, ipsam nihil?
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+            et vero excepturi dolorem, autem ipsam nesciunt ratione quibusdam
+            delectus accusantium obcaecati voluptatum impedit ut rerum doloribus
+            dignissimos. Cumque, enim autem!Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Expedita et vero excepturi dolorem,
+            autem ipsam nesciunt ratione quibusdam delectus accusantium
+            obcaecati voluptatum impedit ut rerum doloribus dignissimos. Cumque,
+            enim autem!
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+            et vero excepturi dolorem, autem ipsam nesciunt ratione quibusdam
+            delectus accusantium obcaecati voluptatum impedit ut rerum doloribus
+            dignissimos. Cumque, enim autem! Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Expedita et vero excepturi dolorem,
+            autem ipsam nesciunt ratione quibusdam delectus accusantium
+            obcaecati voluptatum impedit ut rerum doloribus dignissimos. Cumque,
+            enim autem!Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Expedita et vero excepturi dolorem, autem ipsam nesciunt ratione
+            quibusdam delectus accusantium obcaecati voluptatum impedit ut rerum
+            doloribus dignissimos. Cumque, enim autem!
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+            et vero excepturi dolorem, autem ipsam nesciunt ratione quibusdam
+            delectus accusantium obcaecati voluptatum impedit ut rerum doloribus
+            dignissimos. Cumque, enim autem!
+          </p>
+
+          <div class="comment-box">
+            <h3>Leave a comment</h3>
+            <form class="comment-form" action="">
+              <input type="text" placeholder="Enter Name" />
+              <input type="email" placeholder="Enter Email" />
+              <textarea rows="5" placeholder="Your Thoughts"></textarea>
+              <button type="submit" class="hero-btn btn-border">
+                Post Comment
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="blog-right">
+          <h3>Post Categories</h3>
+          <div>
+            <span>Data Science</span>
+            <span>72</span>
+          </div>
+          <div>
+            <span>IT Analytics</span>
+            <span>55</span>
+          </div>
+          <div>
+            <span>Machine Learning</span>
+            <span>45</span>
+          </div>
+          <div>
+            <span>Bussiness Analytics</span>
+            <span>35</span>
+          </div>
+          <div>
+            <span>Computer Science</span>
+            <span>53</span>
+          </div>
+          <div>
+            <span>Bussiness Managemnet</span>
+            <span>32</span>
+          </div>
+          <div>
+            <span>Logistics</span>
+            <span>65</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---- Footer ---- -->
+    <footer>
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum,
+        accusantium molestiae <br />
+        laborum qui architecto hic ex ad quas. Sequi.
+      </p>
+
+      <div class="icons">
+        <i class="fa fa-brands fa-facebook"></i>
+        <i class="fa fa-brands fa-twitter"></i>
+        <i class="fa fa-brands fa-instagram"></i>
+        <i class="fa fa-brands fa-linkedin"></i>
+      </div>
+
+      <p>Made with <i class="fa-regular fa-heart"></i> by Naim</p>
+    </footer>
+
+    <!-- ------Javascript for Toggle Menu------ -->
+    <script>
+      const navLinks = document.querySelector('#navLinks');
+
+      function showMenu() {
+        navLinks.style.right = '0';
+        // navLinks.style.display = 'block';
+      }
+
+      function hideMenu() {
+        navLinks.style.right = '-200px';
+        // navLinks.style.display = 'none';
+      }
+    </script>
+  </body>
+</html>
