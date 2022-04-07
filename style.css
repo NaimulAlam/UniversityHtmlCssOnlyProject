@@ -518,3 +518,12 @@ comment-form button {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
+
+/* ---- thank you page ---- */
+.query-again {
+  width: 80%;
+  margin: auto;
+  padding: 40px;
+  text-align: center;
+  color: #f44336;
+}
